@@ -2,7 +2,7 @@
     "type": "MySQLNotebook",
     "version": "1.0",
     "caption": "DB Notebook",
-    "content": "CREATE DATABASE sampleDB;\nUSE sampleDB;\nCREATE TABLE students(\n    id VARCHAR(10),\n    name VARCHAR(10),\n    age INT\n);\nINSERT INTO students (id, name, age) VALUES\n    ('101', 'Ram', 19),\n    ('102', 'Sam', 20),\n    ('103', 'Raj', 19),\n    ('104', 'Sai', 18);\nSELECT * FROM students;",
+    "content": "CREATE DATABASE sampleDB;\nUSE sampleDB;\nCREATE TABLE students(\n    id VARCHAR(10),\n    name VARCHAR(10),\n    age INT\n);\nINSERT INTO students (id, name, age) VALUES\n    ('101', 'Ram', 19),\n    ('102', 'Sam', 20),\n    ('103', 'Raj', 19),\n    ('104', 'Sai', 18);\nSELECT * FROM students;\n",
     "options": {
         "tabSize": 4,
         "indentSize": 4,
@@ -13,13 +13,13 @@
     "viewState": {
         "cursorState": [
             {
-                "inSelectionMode": true,
+                "inSelectionMode": false,
                 "selectionStart": {
-                    "lineNumber": 13,
-                    "column": 24
+                    "lineNumber": 14,
+                    "column": 1
                 },
                 "position": {
-                    "lineNumber": 13,
+                    "lineNumber": 14,
                     "column": 1
                 }
             }
@@ -41,23 +41,8 @@
         {
             "state": {
                 "start": 1,
-                "end": 13,
+                "end": 14,
                 "language": "mysql",
-                "result": {
-                    "type": "text",
-                    "text": [
-                        {
-                            "type": 0,
-                            "index": 0,
-                            "content": "MySQL Error (1046): ClassicSession.run_sql: No database selected",
-                            "language": "ansi"
-                        }
-                    ],
-                    "executionInfo": {
-                        "text": ""
-                    }
-                },
-                "currentHeight": 28,
                 "currentSet": 1,
                 "statements": [
                     {
@@ -104,6 +89,15 @@
                         },
                         "contentStart": 260,
                         "state": 0
+                    },
+                    {
+                        "delimiter": ";",
+                        "span": {
+                            "start": 283,
+                            "length": 1
+                        },
+                        "contentStart": 282,
+                        "state": 3
                     }
                 ]
             },
