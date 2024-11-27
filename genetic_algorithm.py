@@ -39,7 +39,7 @@ def main():
         new_gen = [fitness_cal(chromo) for chromo in mutated]
         population = replace(new_gen, population)
         best = min(population, key=lambda x: x[1])
-        print(f'String: {best[0]} Generation: {generation} Fitness: {best[1]}')
+        print(f'String: {" ".join(best[0])} Generation: {generation} Fitness: {best[1]}')
         if best[1] == 0:
             print('Target found')
             break
