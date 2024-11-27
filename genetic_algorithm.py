@@ -2,8 +2,8 @@ import random
 
 POP_SIZE = 500
 MUT_RATE = 0.1
-TARGET = 'srini'
-GENES = 'abcdefghijklmnopqrstuvwxyz'
+TARGET = '217y1a05c0'
+GENES = 'abcdefghijklmnopqrstuvwxyz0123456789'
 
 def initialize_pop():
     return [[random.choice(GENES) for _ in range(len(TARGET))] 
